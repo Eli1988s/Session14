@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: verdana;
+}
+section {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MYTUNES START */
+#myTunes{
+    background: url("./img/showcase.jpg");
+    color: rgba(230, 225, 225, 0.884);
+    padding: 20px;
+}
+#myTunes h1{
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+#myTunes h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+#myTunes p{
+    line-height: 1.5em;
+    
+}
+/* MYTUNES END */
+.container{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* MUSIC START */
+#Music{
+    background-color: rgb(48, 44, 44);
+    color: rgba(230, 225, 225, 0.884);
+    height: 100vh;
+    padding-top: 10px;
+}
+#Music h1{
+    font-size: 70px;
+    padding-top: 300px;
+}
+#Music h2{
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+#Music p{
+    line-height: 1.em;
+    font-size: 14px;
+    
+}
+#Music img{
+    padding: 30px;
+    margin-bottom: 250px;
+    align-items: center;
+}
+.btn01{
+    background-color: rgb(226, 43, 37);
+    border: 0;
+    padding: 10px;
+    color:  rgba(230, 225, 225, 0.884);
+    cursor: pointer;
+    margin: 30px;
+}
+/* MUSIC END */
+/* MOVIE START */
+#movie{
+    background-color: rgb(224, 218, 218);
+    padding-bottom: 40px;
+}
+#movie h2{
+    padding-top: 50px;
+    margin: 40px;
+}
+
+#movie p{
+    line-height: 1.em;
+    font-size: 14px;
+}
+.btn02{
+    background-color: rgb(38, 38, 102);
+    border: none;
+    padding: 15px;
+    color: rgba(230, 225, 225, 0.884);
+    cursor: pointer;
+}
+/* MOVIE END */
+/* ENTERTAINMENT START */
+#entertainment{
+    background-image: url("./img/section-bg.jpg");
+    color: rgba(230, 225, 225, 0.884);
+    height: 400px;
+    padding-top: 100px;
+}
+#entertainment h2{
+    padding-bottom: 40px;
+}
+#entertainment p{
+    line-height: 1.em;
+    padding-bottom: 40px;
+    font-size: 14px;
+}
+/* ENTERTAINMENT END */
+/* GIFT START */
+#Gift{
+    background-color: rgb(224, 218, 218);
+    display: grid;
+    height: 400px;
+    padding-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    }
+#Gift img{
+    width: 50%;
+}
+#Gift h2{
+    padding-bottom: 30px;
+    text-align: left;
+}
+#Gift p{
+    padding-bottom: 30px;
+    text-align: left;
+    line-height: 1.5em;
+}
+#Gift a{
+    text-decoration: none;
+    color: rgb(35, 35, 236);
+    padding-bottom: 30px;
+    text-align: left;
+}
+#Gift p:nth-child(4){
+    border-bottom: 1px solid rgb(114, 111, 111);
+    padding-bottom: 10px;
+}
+/* GIFT END */
+/* COLL INFORMATION START */
+#coll-Information{
+    background-color: rgb(17, 16, 16);
+    color: rgba(230, 225, 225, 0.884);
+    height: 200px;
+    display: flex;
+    padding-bottom: 15px;
+}
+#coll-Information h4{
+    list-style-type: none;
+    font-size: 16px;
+    padding: 30px;
+}
+#coll-Information a{
+    text-decoration: none;
+    color:rgba(230, 225, 225, 0.884);
+    font-size: 14px;
+}
+#coll-Information a:hover{
+    color:#777;
+}
+/* COLL INFORMATION END */
+/* FOOTER START */
+Footer{
+    background-color: rgb(68, 67, 67);
+    color: rgba(230, 225, 225, 0.884);
+    text-align: center;
+    height: 50px;
+    padding: 15px;;
+}
+/* FOOTER END */
+@media (max-width: 768px){
+    #MyTunes ,#Music,#movie,#entertainment,#Gift,#coll-Information,#container {
+        float: none;
+        width: 100% !important;
+        height: 100%;
+        text-align: center;    
+    }
+    #Gift{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
